@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='tracker.css') }}" />
+  </head>
+  <body>
+    <div class="welcome">
+      <h3>Welcome {{username}}</h3>
+    </div>
+    <div class="logout">
+      <a href="{{url_for('logout')}}" class="button-2">Logout</a>
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="card main-content">
+          <div class="card-header table-header">Tracker Details</div>
+          <div class="card-body">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">S. No.</th>
+                  <th scope="col">Tracker Name</th>
+                  <th scope="col">Last Tracked</th>
+                  <th scope="col">Log Value</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for t in tdata %}
+                <tr>
+                  <th scope="row">1</th>
+                  <td><a href="/customer/{{username}}/{{t.tname}}" style="text-decoration: none; color: blue;">{{t.tname}}</a></td>
+                  <td>{{t.tdesc}}</td>
+                  <td>
+                    <a href="{{username}}/log/{{t.tname}}" class="btn btn-primary">New</a>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Action
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="/customer/{{username}}/{{t.id}}/edit">Edit</a></li>
+                        <li><a class="dropdown-item" href="/customer/{{username}}/{{t.id}}/delete">Delete</a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+            <div class="btn-add-tracker">
+              <a href="{{url_for('tracker')}}" class="button-2">Add Tracker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Prata', serif;;
+    font-size:14px;
+    color:#fff;
+    height: 100vh;
+    width: 100%;
+    background: url('./images.jpg');
+    background-position:top;
+    background-size:cover;
+    background-repeat:none;     
+}
+.jhope .rname h1{
+    font-size:100px;
+}
+/* .jhope{
+    height: 100vh;
+    width: 100%;
+    background: url('./images.jpg');
+    background-position:top;
+    background-size:cover;
+    background-repeat:none;     
+} */
+.rname{
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:20%;
+}
+.button-1{
+    display: block;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    color: rgb(248, 51, 51);
+    width: 180px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0 auto;
+    text-decoration:none;
+}
+.button-1:hover{
+    color:rgb(1, 0, 53)
+}
+  
+
+ .container input[type=text], input[type=password] {
+    width: 30%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-flex;
+    border: 1px solid rgb(255, 62, 62);
+    box-sizing: border-box;
+    text-align:center;
+    border-radius: 5px;
+  }
+  
+  .button-2{
+    display: block;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    color: rgb(248, 51, 51);
+    width: 180px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-right:69%;
+    margin-top:2%;
+    text-decoration:none;
+}
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    padding-top: 1%;
+    width: 80%;
+    padding-left: 20%;
+    
+  }
+
+  .loginprofile {
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 10px;
+    margin-left:30%;
+    margin-top:1%;
+  }
+ .container p{
+     margin-left:10%;
+ }
+  .register{
+      
+      color:#fff;
+  }
+  .button-3{
+    display: block;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    color: rgb(248, 51, 51);
+    width: 180px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-right:69%;
+    text-decoration:none;
+    margin-top:5%;
+  }
+.container2{
+   padding-left:20%;
+   margin-left:20%;
+   margin-top:2%;
+   text-align:left;
+}
+.imgcontainer2 {
+  text-align: center;
+  padding-top: 2%;
+  padding-left: 1%;
+}
+.registerprofile {
+  width: 10%;
+  border-radius: 50%;
+}
+.container2 input[type=text],input[type=password]{
+  width: 30%;
+  padding: 10px 10px;
+  margin: 4px 0;
+  margin-bottom:5px;
+  display: inline-block;
+  border: 1px solid rgb(255, 62, 62);
+  box-sizing: border-box;
+  text-align:center;
+  margin-top:2%;
+}
+
+.reglink{
+  padding-top: 25px;
+  margin-left: 12%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.btn{
+  background-color: #ff573a;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 20px;
+  border:#4CAF50;
+}
+.btn:hover{
+color:rgb(1, 1, 43);
+}
+
+.btn-back{
+  display: block;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+  color: rgb(248, 51, 51);
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-decoration:none;
+}
+.btn-back:hover{
+  color:rgb(1, 0, 53)
+}
+
+
+.input-form-username{
+  padding-left: 8%;
+}
+
+.input-form-password{
+  padding-left: 8%;
+  margin-top: -3%;
+}
+
+.login-btn{
+  margin-left: 21%;
+}
+
+.add-tracker-btn{
+  margin-left: 7%;
+}
+
+.log-btn{
+  margin-left: 10%;
+}
+
+.form-check{
+  padding-left: 15%;
+}
+
+.note{
+  margin-left: 42%;
+}
+
+.edit-log-radio{
+  padding-top: 1%;
+  margin-left: 35%;
+}
+
+.edit-log-btn{
+  margin-left: 45%;
+}
